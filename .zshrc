@@ -4,6 +4,7 @@ alias java17="export JAVA_HOME=`/usr/libexec/java_home -v 17`; java -version"
 
 export JAVA_HOME=`/usr/libexec/java_home -v 11`
 export GPG_TTY=$(tty)
+export SPARK_LOCAL_IP="127.0.0.1"
 
 export SL_ROOT=~/snaplogic/Tectonic
 export SNAP_HOME=~/snaplogic/Snap_v4
@@ -23,3 +24,9 @@ ${SL_ROOT}/pslutils/src:\
 ${SL_ROOT}/ccproxy/src/main/python:\
 ${SL_ROOT}/cloudops/python"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
